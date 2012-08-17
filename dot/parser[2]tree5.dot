@@ -1,0 +1,41 @@
+digraph Tree{
+0[label="root"];
+0->00
+00[label="tag m"];
+00->000
+000[label="tag z"];
+000->0000
+0000[label="tag c"];
+000->0001
+0001[label="tag o"];
+000->0002
+0002[label="tag k"];
+00->001
+001[label="tag n"];
+001->0010
+0010[label="tag l"];
+001->0011
+0011[label="tag q"];
+00->002
+002[label="tag c"];
+002->0020
+0020[label="tag b"];
+002->0021
+0021[label="tag n"];
+002->0022
+0022[label="tag m"];
+002->0023
+0023[label="tag t"];
+002->0024
+0024[label="tag d"];
+00->003
+003[label="tag x"];
+003->0030
+0030[label="tag j"];
+003->0031
+0031[label="tag y"];
+003->0032
+0032[label="tag f"];
+003->0033
+0033[label="tag w"];
+}

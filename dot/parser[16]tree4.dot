@@ -1,0 +1,15 @@
+digraph Tree{
+0[label="root"];
+0->00
+00[label="tag u"];
+00->000
+000[label="tag y"];
+00->001
+001[label="tag w"];
+00->002
+002[label="tag j"];
+00->003
+003[label="tag z"];
+00->004
+004[label="tag v"];
+}

@@ -1,0 +1,11 @@
+digraph Tree{
+0[label="root"];
+0->00
+00[label="comment"];
+0->01
+01[label="tag r"];
+01->010
+010[label="tag b"];
+01->011
+011[label="tag q"];
+}
