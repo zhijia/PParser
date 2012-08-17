@@ -1,5 +1,0 @@
-digraph Tree{
-0[label="root"];
-0->00
-00[label="tag a"];
-}

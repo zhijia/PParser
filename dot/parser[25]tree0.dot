@@ -1,7 +1,0 @@
-digraph Tree{
-0[label="root"];
-0->00
-00[label="comment"];
-0->01
-01[label="tag k"];
-}
