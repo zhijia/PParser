@@ -24,11 +24,6 @@ public class Main {
 		parsers = new Parser[numThreads];
 		inputs = partition();
 		remains = new Remain[numThreads];
-		for(int i=0; i<numThreads; i++)
-		{
-			remains[i] = new Remain();
-			parsers[i] = new Parser("parser["+i+"]", inputs[i], remains[i]);
-		}
 		System.out.println("finished loading file.");
 	}
 	
@@ -68,8 +63,15 @@ public class Main {
 	{
 		for(int i=0; i<numThreads; i++)
 		{
+			remains[i] = new Remain();
+			parsers[i] = new Parser("parser["+i+"]", inputs[i], remains[i]);
+		}
+		
+		for(int i=0; i<numThreads; i++)
+		{
 			parsers[i].start();
 		}
+		
 		for(int i=0; i<numThreads; i++)
 		{
 			try {
@@ -78,6 +80,7 @@ public class Main {
 				e.printStackTrace();
 			}
 		}
+		
 		if(numThreads > 1)
 		{
 			long start = System.nanoTime();

@@ -90,7 +90,7 @@ public class Parser extends Thread{
 			
 			if(token.type.equals("comment_end"))
 			{
-				System.out.println(getName()+" rollbacks from "+pos+" to 0, and starts reprocessing");
+				System.out.println(getName()+" rollbacks from "+pos+" to 0, reprocesses its segment.");
 				// rollback
 				pos = 0;
 				root.children = new ArrayList<Node>();
