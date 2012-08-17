@@ -95,9 +95,16 @@ public class Main {
 	public static void main(String[] args) {
 		Main pparser = new Main();
 		pparser.init(args[0]);
-		long start = System.nanoTime();
-		pparser.process();
-		System.out.println("parsing time: "+(System.nanoTime()-start));
+		
+		long sum = 0;
+		for(int i=0; i<10; i++)
+		{
+			long start = System.nanoTime();
+			pparser.process();
+			if( i > 5 )
+				sum += System.nanoTime()-start;
+		}
+		System.out.println("parsing time ave: "+(sum/(10-5)));
 	}
 
 }
